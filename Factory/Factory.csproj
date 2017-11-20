@@ -44,16 +44,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cars\Car.cs" />
-    <Compile Include="Cars\Golf.cs" />
-    <Compile Include="Cars\Passat.cs" />
-    <Compile Include="Cars\Tiguan.cs" />
-    <Compile Include="Cars\Tuareg.cs" />
+    <Compile Include="Cars\DeutschGolf.cs" />
+    <Compile Include="Cars\RussianGolf.cs" />
+    <Compile Include="Cars\DeutschPassat.cs" />
+    <Compile Include="Cars\RussianPassat.cs" />
+    <Compile Include="Cars\DeutschTiguan.cs" />
+    <Compile Include="Cars\RussianTiguan.cs" />
+    <Compile Include="Cars\DeutschTuareg.cs" />
+    <Compile Include="Cars\RussianTuareg.cs" />
+    <Compile Include="Facilites\DeutschVolkswagenFacility.cs" />
+    <Compile Include="Facilites\RussianVolkswagenFacility.cs" />
     <Compile Include="RefBooks\BodyCarTypes.cs" />
     <Compile Include="RefBooks\CarTypes.cs" />
     <Compile Include="Facilites\VolkswagenFacility.cs" />
     <Compile Include="Factory\SimpleFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RefBooks\EngineTypes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

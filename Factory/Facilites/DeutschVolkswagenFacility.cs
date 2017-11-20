@@ -6,27 +6,27 @@ using System.Threading.Tasks;
 using Factory.Cars;
 using Factory.RefBooks;
 
-namespace Factory.Factory
+namespace Factory.Facilites
 {
-    public class SimpleFactory
+    public class DeutschVolkswagenFacility : VolkswagenFacility
     {
-        public Car GetCar(CarTypes type)
+        public override Car CreateCar(CarTypes type)
         {
             Car car = new Car();
 
             switch (type)
             {
                 case CarTypes.Golf:
-                    car = new RussianGolf();
+                    car = new DeutschGolf();
                     break;
                 case CarTypes.Passat:
-                    car = new RussianPassat();
+                    car = new DeutschPassat();
                     break;
                 case CarTypes.Tiguan:
-                    car = new RussianTiguan();
+                    car = new DeutschTiguan();
                     break;
                 case CarTypes.Tuareg:
-                    car = new RussianTuareg();
+                    car = new DeutschTuareg();
                     break;
                 default: throw new Exception($"Типа {type} не существует");
             }

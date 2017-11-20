@@ -9,8 +9,8 @@ namespace Factory
     {
         static void Main(string[] args)
         {
-            SimpleFactory factory = new SimpleFactory();
-            VolkswagenFacility facility = new VolkswagenFacility(factory);
+
+            VolkswagenFacility facility = new RussianVolkswagenFacility();
 
             facility.GetCar(CarTypes.Golf);
             Console.WriteLine();

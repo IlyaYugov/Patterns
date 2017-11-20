@@ -2,12 +2,13 @@
 
 namespace Factory.Cars
 {
-    public class Golf : Car
+    public class DeutschGolf : Car
     {
-        public Golf()
+        public DeutschGolf()
         {
             Name = CarTypes.Golf;
             Body = BodyCarTypes.Hatchback;
+            Engine = EngineTypes.Diesel;
         }
     }
 }

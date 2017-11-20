@@ -9,18 +9,11 @@ using Factory.Factory;
 
 namespace Factory.Facilites
 {
-    public class VolkswagenFacility
+    public abstract class VolkswagenFacility
     {
-        private SimpleFactory _factory;
-
-        public VolkswagenFacility(SimpleFactory factory)
-        {
-            _factory = factory;
-        }
-
         public Car GetCar(CarTypes type)
         {
-            Car car = _factory.GetCar(type);
+            Car car = CreateCar(type);
 
             car.Configure();
             car.AssembleBody();
@@ -30,5 +23,7 @@ namespace Factory.Facilites
 
             return car;
         }
+
+        public abstract Car CreateCar(CarTypes type);
     }
 }

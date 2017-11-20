@@ -2,12 +2,13 @@
 
 namespace Factory.Cars
 {
-    public class Passat: Car
+    public class RussianPassat: Car
     {
-        public Passat()
+        public RussianPassat()
         {
             Name = CarTypes.Passat;
             Body = BodyCarTypes.Sedan;
+            Engine = EngineTypes.Gasoline;
         }
     }
 }

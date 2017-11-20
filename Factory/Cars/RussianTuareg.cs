@@ -2,12 +2,13 @@
 
 namespace Factory.Cars
 {
-    public class Tuareg : Car
+    public class RussianTuareg : Car
     {
-        public Tuareg()
+        public RussianTuareg()
         {
             Name = CarTypes.Tuareg;
             Body = BodyCarTypes.BigCrossover;
+            Engine = EngineTypes.Gasoline;
         }
     }
 }

@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Factory.Cars;
+using Factory.Factory;
 using Factory.RefBooks;
 
-namespace Factory.Factory
+namespace Factory.Facilites
 {
-    public class SimpleFactory
+    public class RussianVolkswagenFacility : VolkswagenFacility
     {
-        public Car GetCar(CarTypes type)
+        public override Car CreateCar(CarTypes type)
         {
             Car car = new Car();
 

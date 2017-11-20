@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Factory.RefBooks;
 
 namespace Factory.Cars
@@ -10,16 +6,16 @@ namespace Factory.Cars
     public class Car
     {
         protected CarTypes Name { get; set; }
-        protected string Engine { get; set; } = "Diesel";
+        protected EngineTypes Engine { get; set; }
         protected string PaintColor { get; set; } = "White";
         protected string Wheels { get; set; } = "16 inch";
         protected BodyCarTypes Body { get; set; }
 
         public void Configure()
         {
-            Console.WriteLine($"Configuring {Name.ToString()}");
+            Console.WriteLine($"Configuring {Name}");
             Console.WriteLine($"Engine is {Engine}");
-            Console.WriteLine($"Body is {Body.ToString()}");
+            Console.WriteLine($"Body is {Body}");
             Console.WriteLine($"PaintColor is {PaintColor}");
             Console.WriteLine($"Wheels are {Wheels}");
         }

@@ -2,12 +2,13 @@
 
 namespace Factory.Cars
 {
-    public class Tiguan : Car
+    public class RussianTiguan : Car
     {
-        public Tiguan()
+        public RussianTiguan()
         {
             Name = CarTypes.Tiguan;
             Body = BodyCarTypes.Crossover;
+            Engine = EngineTypes.Gasoline;
         }
     }
 }
